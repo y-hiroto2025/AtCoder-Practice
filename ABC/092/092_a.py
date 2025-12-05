@@ -12,6 +12,7 @@ def main():
     return ans
 
 def main_class():
+    # classを使って書いてみる
     pass
 
 if __name__ == "__main__":
