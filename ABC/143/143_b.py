@@ -1,11 +1,5 @@
 # 問題URL: https://atcoder.jp/contests/abc143/tasks/abc143_b
 
-# N個のたこ焼き
-# i個目はおいしさd[i]
-# おいしさx, yの二つを食べると体力が + x*y
-# nC2 = n(n-1)/2
-# ２個一緒に食べたときの体力回復量の総和
-
 def main():
     amount = int(input())
     tastes = list(map(int, input().split()))
