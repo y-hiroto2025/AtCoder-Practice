@@ -17,7 +17,7 @@ By arranging the sort ascending order, I can take elements easily.
 In addition, I can use the slice in stead of for-loop.
 
 bar_lengths.sort(reverses=True)
-ans = barlengths[:3]
+ans = barlengths[:k]
 print(ans)
 """
 
