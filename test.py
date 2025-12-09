@@ -1,4 +1,7 @@
-a = [1, 2, 3, 4]
-x = [i for i in range(4)]
+a = "ACABABCBC"
+print("A" in a)
+print(type(a.count("A")))
 
-print(a[1:])
+print("A" * a.count("A") + "B" * a.count("B"))
+A = "AAABBB"
+print(A == "A"*a.count("A") + "B"*a.count("B"))
