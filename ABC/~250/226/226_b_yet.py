@@ -2,29 +2,20 @@
 問題URL: https://atcoder.jp/contests/abc266/tasks/abc266_b
 ----------------------------------------------------
 結果
-・
+・ギブアップ
 
 なぜ解けなかった？
-・
+・難しく考えてしまった
 
 解法ポイント、学び
-・
+・(N-x)が9982244353の倍数 => Nを998244353で割った余りがx
 ----------------------------------------------------
 """
-import sys
-
-input = sys.stdin.readline
 
 def main():
-    # 次の条件を満たす0<=x<=998244353
-    # (N - x) % 998244353 == 0
-    n = abs(int(input())) # 10^-18 <= 10^18
-
-    for i in range():
-        for j in range():
-            
-
-
+    num = int(input())
+    ans = num % 998244353
+    print(ans)
 
 if __name__ == "__main__":
     main()
