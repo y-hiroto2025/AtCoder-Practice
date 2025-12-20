@@ -1,2 +1,2 @@
-print([0] * 10)
-print(" ".join([1, 2, 3]))
+a = {1: 2, 3: 5}
+print(2 in a)
