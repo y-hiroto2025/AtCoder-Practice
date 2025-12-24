@@ -1,2 +1,2 @@
-a = {1, 2, 3}
-print(*a)
+a = set(x for x in range(3))
+print(a[0])
