@@ -1,2 +1,2 @@
-a = set(x for x in range(3))
-print(a[0])
+a = "asdasd"
+print(a[:3], a[:2:-1])
