@@ -1,2 +1,3 @@
-a = "asdasd"
-print(a[:3], a[:2:-1])
+a = "aaabaaa"
+b = "aaa"
+print(a[7 - 3:])
