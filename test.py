@@ -1,2 +1,4 @@
-a = "111"
-print("1"*3 == a)
+A = 0
+a = "A"
+
+print(int(a))
