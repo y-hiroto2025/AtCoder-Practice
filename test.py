@@ -1,4 +1,1 @@
-A = 0
-a = "A"
-
-print(int(a))
+print(-6 % 3)
