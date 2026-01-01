@@ -1,3 +1,4 @@
-a = "1234"
-for i in range(len(a)):
-    print(a[-i-1])
+import collections
+
+a = collections.Counter("baabcdab")
+print(sorted(collections.Counter.most_common(a)))
