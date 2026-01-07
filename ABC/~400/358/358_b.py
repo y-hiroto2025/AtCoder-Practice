@@ -3,9 +3,6 @@
 ----------------------------------------------------
 結果
 ・自力（8min）
-
-解法ポイント、学び
-・
 ----------------------------------------------------
 """
 import sys
@@ -23,7 +20,7 @@ def main():
             current_time += A
         else:
             current_time = A + T[i]"""
-        current_time = max(current_time, T[i]) + A
+        current_time = max(current_time, t) + A
         print(current_time)
 
 if __name__ == "__main__":
