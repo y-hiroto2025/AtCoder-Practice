@@ -1,1 +1,2 @@
-print([[0]*10]*10)
+a = "AAAA"
+print(a.isupper())
