@@ -16,7 +16,7 @@ def main():
 
     dists = sorted([dist_AB, dist_BC, dist_CA])
 
-    if dists[0] == dists[1] + dists[2]:
+    if dists[2] == dists[0] + dists[1]:
         print("Yes")
     else:
         print("No")
