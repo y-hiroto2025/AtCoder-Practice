@@ -1,2 +1,2 @@
-a = "AAAA"
-print(a.isupper())
+a = "AtCoder"
+print(a[0::])
