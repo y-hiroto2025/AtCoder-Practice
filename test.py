@@ -1,2 +1,3 @@
-a = "AtCoder"
-a.replace(a[0], a[1]).replace(a[1], a[0]))
+import collections
+a = [1, 2, 5, 6]
+print(a.count(5))
