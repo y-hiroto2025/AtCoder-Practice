@@ -1,1 +1,1 @@
-print(set(str(123)))
+print("1" + "3")
