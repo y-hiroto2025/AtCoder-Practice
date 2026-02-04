@@ -1,19 +1,24 @@
 """
-問題URL: https://atcoder.jp/contests/discovery2016-qual/tasks/discovery_2016_qual_a
+問題URL: https://atcoder.jp/contests/tenka1-2017-beginner/tasks/tenka1_2017_b
 ----------------------------------------------------
 結果
-・自力（6min）
+・自力（10min）
 ----------------------------------------------------
 """
+import sys
+
+input = sys.stdin.readline
+
 def main():
-    W = int(input())
-    s = "DiscoPresentsDiscoveryChannelProgrammingContest2016"
-    for i in range(len(s)):
-        print(s[i], end="")
-        if (i + 1) % W == 0:
-            print()
-        elif i + 1 == len(s):
-            print()
+    N = int(input())
+    point_dic = {}
+    for _ in range(N):
+        A_i, B_i = map(int, input().split())
+        point_dic[B_i] = A_i
+    min_point = min(point_dic)
+
+    print(min_point + point_dic[min_point])
+
 
 if __name__ == "__main__":
     main()

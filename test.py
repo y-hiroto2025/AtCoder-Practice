@@ -1,3 +1,2 @@
-from collections import Counter
-S = "abcdefg"
-print(S[3: -2])
+a = "011100010011000"
+print("00" in a)
