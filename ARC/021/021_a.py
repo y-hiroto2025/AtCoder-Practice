@@ -1,28 +1,21 @@
 """
-問題URL: 
+問題URL: https://atcoder.jp/contests/arc021/tasks/arc021_1
 ----------------------------------------------------
-結果
-・
-
-なぜ解けなかった？
-・
-
-解法ポイント、学び
-・
 ----------------------------------------------------
 """
 def main():
     A = [list(map(int, input().split())) for _ in range(4)]
 
     ans = "GAMEOVER"
-    for i in range(3):
+    for i in range(4):
         for j in range(3):
-            down = A[i + 1][j]
-            right = A[i][j + 1]
-            if A[i][j] == down or A[i][j] == right:
+            if A[i][j] == A[i][j + 1]:
                 ans = "CONTINUE"
-                print(ans)
-                return
+    
+    for i in range(3):
+        for j in range(4):
+            if A[i][j] == A[i + 1][j]:
+                ans = "CONTINUE"
     print(ans)
 
 if __name__ == "__main__":
