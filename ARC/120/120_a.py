@@ -1,14 +1,6 @@
 """
-問題URL: 
+問題URL: https://atcoder.jp/contests/arc120/tasks/arc120_a
 ----------------------------------------------------
-結果
-・
-
-なぜ解けなかった？
-・
-
-解法ポイント、学び
-・
 ----------------------------------------------------
 """
 import sys
@@ -16,7 +8,6 @@ import sys
 input = sys.stdin.readline
 
 def main():
-
 
 if __name__ == "__main__":
     main()
