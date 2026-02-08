@@ -1,3 +1,4 @@
+# １次元の累積和
 def main():
     D = int(input())
     N = int(input())
