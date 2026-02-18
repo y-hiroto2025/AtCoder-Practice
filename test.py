@@ -1,4 +1,4 @@
-a = set()
-a.add((1, 2))
-a.add((2, 1))
-print(a)
+from math import pi
+R, D = map(int, input().split())
+
+print(R*R*D*2*pi*pi)
