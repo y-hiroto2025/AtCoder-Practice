@@ -1,2 +1,3 @@
-a = (1, 2)
-print(a[1])
+N = int(input())
+N_list = [i for i in N]
+print(N_list)
