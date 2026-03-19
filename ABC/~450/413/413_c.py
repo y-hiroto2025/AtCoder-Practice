@@ -1,38 +1,43 @@
 """
 問題URL: https://atcoder.jp/contests/abc413/tasks/abc413_c
 ----------------------------------------------------
-結果
-・
-
-なぜ解けなかった？
-・
-
-解法ポイント、学び
-・
 ----------------------------------------------------
 """
 import sys
-
 input = sys.stdin.readline
+from collections import deque
 
 def main():
-    A = []
     Q = int(input())
 
-    real_first = 0
-    for i in range(Q):
-        query = list(map(int, input().split()))
-        if query[0] == 1:
-            c = query[1]
-            x = query[2]
-            A += [x] * c
+    A = deque()
 
+    for _ in range(Q):
+        q = list(map(int, input().split()))
+
+        if q[0] == 1:
+            A.append([q[2], q[1]])
+        
         else:
-            k = query[1]
-            real_first += k - 1
-            print(sum(A[real_first:]))
-        print(A)
+            k = q[1]
+            ans = 0
 
+            while k > 0:
+                x = A[0][0]
+                c = A[0][1]
+                
+                if c <= k:
+                    ans += x * c
+                    k -= c
+                    A.popleft()
+                
+                else:
+                    ans += x * k
+                    A[0][1] -= k
+                    k = 0
+            
+            print(ans)
+            
 
 if __name__ == "__main__":
     main()
