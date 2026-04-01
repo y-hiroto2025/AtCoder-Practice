@@ -1,2 +1,3 @@
-a = "211/2212"
-print(a.index("1/2"))
+a = "ooxoxxooo"
+for i in range(len(a)):
+    print(a[i:i+2])
