@@ -1,3 +1,2 @@
-a = "ooxoxxooo"
-for i in range(len(a)):
-    print(a[i:i+2])
+a = "abaaaaaaaaaaaaac"
+print(a[1: 5])
