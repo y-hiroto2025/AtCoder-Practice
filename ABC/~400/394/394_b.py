@@ -10,6 +10,16 @@ import sys
 input = sys.stdin.readline
 
 def main():
+    N = int(input())
+
+    S = []
+
+    for _ in range(N):
+        S.append(input().strip())
+    
+    S.sort(key=lambda s: len(s))
+    
+    print("".join(S))
 
 
 if __name__ == "__main__":
