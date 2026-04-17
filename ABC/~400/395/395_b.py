@@ -6,13 +6,29 @@
 def main():
     N = int(input())
 
-    ans = ["" for _ in range(N)]
+    ans = [["?"]*N for _ in range(N)]
+    white = False
 
     for i in range(N):
-        j = N + 1 - i-1
+        j = N - i-1
 
-        if i <= j
+        if i <= j:
+            if (i+1) % 2 == 0:
+                white = True
+            else:
+                white = False
 
+        for y in range(i, j+1):
+            for x in range(i, j+1):
+                if white:
+                    ans[y][x] = "."
+                else:
+                    ans[y][x] = "#"
+    
+    for s in ans:
+        print(*s, sep="")
+    
+    
 
 if __name__ == "__main__":
     main()
