@@ -1,8 +1,6 @@
 """
 問題URL: https://atcoder.jp/contests/abc398/tasks/abc398_b
 ----------------------------------------------------
-結果
-・
 ---------------
 """
 from collections import Counter
