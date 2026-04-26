@@ -3,20 +3,21 @@
 ----------------------------------------------------
 ----------------------------------------------------
 """
+import sys
+
+input = sys.stdin.readline
+
 def main():
-    S = input().strip().replace(".", "o")
-    T = []
+    N, M = map(int, input().split())
+    A = list(map(int, input().split()))
+    B = list(map(int, input().split()))
 
-    for i in range(len(S)-1):
-        if S[i] == "o" and S[i+1] == "o":
-            T.append(".")
-        else:
-            T.append(S[i])
+    for i in range(M):
+        if B[i] in A:
+            A.remove(B[i])
     
-    T.append(S[-1])
-    
-    print(*T, sep="")
-
+    if A != []:
+        print(*A)
 
 if __name__ == "__main__":
     main()
