@@ -1,2 +1,3 @@
-a = "abaaaaaaaaaaaaac"
-print(*list(reversed(a)), sep="")
+a = set("abc")
+
+print(a)
