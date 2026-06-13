@@ -17,36 +17,26 @@ def main():
         c, v = map(int, input().split())
         jewel.append((c, v))
     
-    jewel = sorted(jewel, key=lambda x: x[1], reverse=True)
+    jewel.sort(key=lambda x: x[1], reverse=True)
 
-    idx = 0
-    color_cnt = 0
+    first_jewels = []
+    other_jewels = []
     color_set = set()
-    chose_idx_set = set()
+
+    for c, v in jewel:
+        if c not in color_set:
+            color_set.add(c)
+            first_jewels.append(v)
+        else:
+            other_jewels.append(v)
+    
     ans = 0
 
-    while color_cnt < M:
-        j = jewel[idx]
+    ans += sum(first_jewels[:M])
+    remains = sorted(first_jewels[M:] + other_jewels, reverse=True)
 
-        if j[0] not in color_set:
-            color_set.add(j[0])
-            color_cnt += 1
-            chose_idx_set.add(idx)
-            ans += j[1]
-        
-        idx += 1
-    
-    idx = 0
+    ans += sum(remains[:K-M])
 
-    while color_cnt < K:
-        j = jewel[idx]
-
-        if idx not in chose_idx_set:
-            ans += j[1]
-            color_cnt += 1
-        
-        idx += 1
-    
     print(ans)
 
 
