@@ -23,10 +23,7 @@ def main():
         comb = list(combinations(A, k))
 
         for c in comb:
-            n = set()
-
-            for i in range(len(c)):
-                n |= c[i]
+            n = set().union(*c)
             
             if len(n) == N:
                 ans += 1
