@@ -1,2 +1,1 @@
-a = "..####"
-print(set(a))
+print(range(3))
