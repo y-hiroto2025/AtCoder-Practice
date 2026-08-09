@@ -1,2 +1,4 @@
- prob = input("problem (a/b/c/...): ").lower()
-        exc
+":(")
+
+if __name__ == "__main__":
+    main()
