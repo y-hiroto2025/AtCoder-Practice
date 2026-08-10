@@ -26,7 +26,7 @@ def main():
 
         else:
             for v in idxs:
-                ans ^= A[v] ^ (A[x] - 1)
+                ans ^= A[v] ^ (A[v] - 1)
                 A[v] -= 1
 
             idxs = [v for v in idxs if A[v] != 0]
