@@ -1,6 +1,8 @@
 """
-問題URL: https://atcoder.jp/contests/abc471/tasks/abc471_c
+問題URL: https://atcoder.jp/contests/abc059/tasks/abc059_b
 ----------------------------------------------------
+結果
+・1min
 ----------------------------------------------------
 """
 import sys
@@ -8,12 +10,15 @@ import sys
 input = sys.stdin.readline
 
 def main():
-    A,B,C,K = map(int, input().split())
+    A = int(input())
+    B = int(input())
 
-    if K%2 == 0:
-        print(A-B)
+    if A>B:
+        print("GREATER")
+    elif A<B:
+        print("LESS")
     else:
-        print(B-A)  
+        print("EQUAL")
 
 
 if __name__ == "__main__":
