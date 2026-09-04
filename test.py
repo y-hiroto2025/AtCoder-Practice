@@ -1,5 +1,5 @@
 """
-url: https://atcoder.jp/contests/agc012/tasks/agc012_a
+url: https://atcoder.jp/contests/agc019/tasks/agc019_a
 """
 
 import sys
@@ -7,13 +7,17 @@ import sys
 input = sys.stdin.readline
 
 def main():
+    Q, H, S, D = map(int, input().split())
     N = int(input())
-    a = sorted(map(int, input().split()), reverse=True)
 
-    ans = 0
-    for i in range(N * 2):
-        if i % 2 != 0:
-            ans += a[i]
+    H = min(H, Q * 2)
+    S = min(S, H * 2)
+
+    if S*2 <=  D:
+        ans = S * N
+    else:
+
+        ans = D * (N // 2) + (N % 2) * S
 
     print(ans)
     
