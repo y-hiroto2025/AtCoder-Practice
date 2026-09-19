@@ -7,20 +7,22 @@ import sys
 input = sys.stdin.readline
 
 def main():
-    Q, H, S, D = map(int, input().split())
     N = int(input())
+    A = list(map(int, input().split()))
 
-    H = min(H, Q * 2)
-    S = min(S, H * 2)
+    total_length = sum(A)
+    sum_left = 0
+    min_diff = float('inf')
 
-    if S*2 <=  D:
-        ans = S * N
-    else:
+    for i in range(N-1):
+        sum_left += A[i]
+        sum_right = total_length - sum_left
 
-        ans = D * (N // 2) + (N % 2) * S
+        diff = abs(sum_left - sum_right)
+        min_diff = min(min_diff, diff)
 
-    print(ans)
-    
+    print(min_diff)
+
 
 if __name__ == "__main__":
     main()
